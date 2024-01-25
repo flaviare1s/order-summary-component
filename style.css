@@ -3,9 +3,9 @@
 :root {
     --cor0: hsl(225, 100%, 94%);
     --cor1: hsl(245, 75%, 52%);
-    --cor3: hsl(225, 100%, 98%);
-    --cor4: hsl(224, 23%, 55%);
-    --cor5: hsl(223, 47%, 23%);
+    --cor2: hsl(225, 100%, 98%);
+    --cor3: hsl(224, 23%, 55%);
+    --cor4: hsl(223, 47%, 23%);
 
     --fonte-padrao: 'Red Hat Display', sans-serif;
 
@@ -33,7 +33,7 @@ body {
 }
 
 main {
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     align-items: center;
     margin: auto;
     width: 90%;
@@ -50,6 +50,74 @@ main {
     text-align: center;
 }
 
+h1 {
+    font-weight: 900;
+    color: var(--cor4);
+    font-size: 22px;
+}
+
+#annual-plan {
+    background-color: hsl(224, 58%, 96%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+#annual-plan a {
+    color: var(--cor1);
+    font-weight: 700;
+}
+
+#annual-plan a:hover {
+    color: hsl(245, 64%, 65%);
+}
+
+
+p {
+    color: var(--cor3);
+}
+
+.text {
+    padding: 20px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    font-weight: 700;
+}
+
+#proceed-button {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    margin: 15px 0px;
+}
+
+#proceed-button:hover {
+    background-color: hsl(245, 64%, 65%);
+}
+
+#cancel-button {
+    background-color: var(--cor2);
+    color: var(--cor2);
+    color: var(--cor3);
+}
+
+#cancel-button:hover {
+    color: var(--cor4);
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -59,6 +127,11 @@ main {
     color: hsl(228, 45%, 44%);
 }
 
+.black-bold {
+    font-weight: 900;
+    color: var(--cor5);
+}
+
 @media screen and (min-width: 400px) {
     body {
         background-image: url(./images/pattern-background-desktop.svg);
@@ -66,6 +139,10 @@ main {
     
     main {
         width: 30%;
+    }
+
+    .text {
+        padding: 20px 30px;
     }
     
 }
