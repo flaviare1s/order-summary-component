@@ -30,11 +30,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
 }
 
 main {
     background-color: var(--cor3);
+    align-items: center;
     margin: auto;
     width: 90%;
     border-radius: 10px;
@@ -50,9 +50,14 @@ main {
     text-align: center;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
 
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 @media screen and (min-width: 400px) {
     body {
